@@ -6,8 +6,7 @@ const App =()=>{
 
   const handelClick=async ()=>{
     try {
-      const response = await fetch('https://fakestoreapi.com/products', {
-      });
+    const response = await fetch('https://fakestoreapi.com/products');
     const result = await response.json();
       setData(result);
     } catch (err) {
@@ -24,8 +23,7 @@ const App =()=>{
       <button className="btn" onClick={handelClick}>Get Data</button>
     </div>
     </>
+    
   );
-}
-
-
+};
 export default App;
