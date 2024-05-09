@@ -3,6 +3,7 @@ import { useState } from "react";
 
 const App =()=>{
   const [data, setData] = useState({data:[]});  
+  const [men,setMen]=useState ("Men");
 
   const handelClick=async ()=>{
     try {
@@ -14,7 +15,9 @@ const App =()=>{
     } 
   };
 
+
   console.log(data);
+
   
   
     return(
